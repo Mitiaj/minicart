@@ -72,7 +72,7 @@ return array(
 		//uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=froggouk_froggopms',
+			'connectionString' => 'mysql:host=localhost;dbname=test',
 			'emulatePrepare' => true,
 			'username' => 'user',
 			'password' => 'usbw',
