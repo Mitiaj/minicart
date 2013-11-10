@@ -100,4 +100,11 @@ class Products extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function xGetProduxts($sSearchQuery)
+    {
+        $sQuery = "SELECT `productName`, `price`,`id` from `products` WHERE `productName` LIKE '%".$sSearchQuery."%'";
+
+        return Yii::app()->db->createCommand($sQuery)->queryAll();
+    }
 }
