@@ -1,0 +1,11 @@
+ul.productList{
+    list-style: none;
+}
+ul.productList>li{
+    width: 200px;
+    float: left;
+    height: 200px;
+}
+.clear{
+    clear: both;
+}

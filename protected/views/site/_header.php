@@ -2,7 +2,7 @@
     <nav>
         <ul>
             <li>
-                <a href="<?php Yii::app()->createUrl('site/about') ?>";
+                <a href="<?php echo Yii::app()->createUrl('site/about') ?>">ABOUT </a>;
             </li>
         </ul>
     </nav>

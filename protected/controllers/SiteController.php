@@ -2,15 +2,19 @@
 
 class SiteController extends Controller
 {
-	
+
 
     public function actionIndex()
 	{
-
+        $oProducts = Products::model()->findAll();
+        Yii::app()->clientScript->registerCssFile(Yii::app()->getBaseUrl()."/css/main.css?001");
+        $this->render('index',array(
+            'oProducts' => $oProducts,
+        ));
 	}
+
     public function actionAbout()
     {
-        $this->layout ="main";
         $this->render('about');
     }
     public function filters() {
