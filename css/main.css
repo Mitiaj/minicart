@@ -9,3 +9,22 @@ ul.productList>li{
 .clear{
     clear: both;
 }
+.searchBox{
+    display: block;
+    width: 250px;
+    color: #FFF;
+    background-color: #000000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+}
+.searchBox ul li{
+    display: block;
+    border-bottom-color: #FFFFBF;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+.searchBox ul li h3{
+    font-size: 12px;
+}
